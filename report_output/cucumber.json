@@ -1,0 +1,72 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-01T19:07:23.741Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1049000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "A",
+        "description": "",
+        "id": "testing;a",
+        "after": [
+          {
+            "result": {
+              "duration": 40000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 220800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I init framework",
+            "match": {
+              "location": "WebStepDefs.iInitFramework()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      }
+    ],
+    "name": "Testing",
+    "description": "",
+    "id": "testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/web/test.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
