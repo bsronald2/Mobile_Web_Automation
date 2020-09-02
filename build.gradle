@@ -23,7 +23,6 @@ def versions = [cucumber : '4.8.1',
 def cucumberArgs = ['--plugin', 'pretty',
                     '--plugin', 'json:report_output/cucumber.json',
                     '--monochrome',
-                    '--glue', 'com.babbel.auto.hooks',
                     '--tags', tags ]
 File reportTest
 
