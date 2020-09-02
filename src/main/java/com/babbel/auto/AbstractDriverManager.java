@@ -4,7 +4,7 @@ import com.babbel.auto.entities.env.EnvInfo;
 import com.babbel.auto.utils.Constants;
 import com.babbel.auto.utils.EnvInfoHandler;
 
-public class AbstractDriverManager {
+public abstract class AbstractDriverManager {
 
     protected EnvInfo envInfo;
 

@@ -1,0 +1,14 @@
+id: "babbel-demo"
+user:
+  userName: "userName"
+  password: "pass"
+mobile:
+  capabilities:
+    - { platformName: "Android", platformVersion: "9", deviceName: "Android Emulator", automationName: "UiAutomator2"}
+    - { platformName: "IOS", platformVersion: "XXXX", deviceName: "XXXXX", automationName: "XXXXX" }
+web:
+  timeOut: 15
+  waitTimeOut: 30
+  url: "https://www.babbel.com/"
+  remotes:
+    - { browser: "Chrome", browserVersion: "84.0.4147.135", platform: "Windows", platformVersion: "8.1", resolution: "1920x1080"}
