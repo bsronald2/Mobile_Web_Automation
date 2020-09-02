@@ -61,7 +61,8 @@ ext.setUpArgs = { ->
     driver = (driver as String).toLowerCase()
     browser = (browser as String).toLowerCase()
     server = (server as String).toLowerCase()
-    platformName = (platformName as String).toLowerCase()
+    System.setProperty('userName', userName as String)
+    System.setProperty('password', password as String)
 
     // Save Args into properties file
     def file = new File(configPath)
@@ -109,6 +110,7 @@ task cucumber(dependsOn:setupEnv) {
             main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
             args = cucumberArgs
+            systemProperties System.properties
         }
     }
 }

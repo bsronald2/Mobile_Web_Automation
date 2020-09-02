@@ -1,8 +1,9 @@
 id: "babbel-demo"
-user:
-  userName: "userName"
-  password: "pass"
 mobile:
+  url: "http://localhost:4723/wd/hub"
+  user:
+    userName: "userName"
+    password: "pass"
   capabilities:
     - { platformName: "Android", platformVersion: "9", deviceName: "Android Emulator", automationName: "UiAutomator2"}
     - { platformName: "IOS", platformVersion: "XXXX", deviceName: "XXXXX", automationName: "XXXXX" }

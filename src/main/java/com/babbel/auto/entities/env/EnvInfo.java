@@ -5,14 +5,9 @@ public class EnvInfo {
     String id;
     Mobile mobile;
     Web web;
-    User user;
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
+    public void loadInitParam() {
+        mobile.loadCredentials();
     }
 
     public String getId() {

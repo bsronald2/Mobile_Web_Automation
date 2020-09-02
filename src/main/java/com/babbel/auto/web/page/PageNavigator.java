@@ -11,7 +11,7 @@ public class PageNavigator extends WebBasePage {
     public EnvInfo envInfo;
 
     private PageNavigator() {
-        this.envInfo = new EnvInfoHandler(Constants.ENV_INFO_PATH).getEnvInfo();;
+        this.envInfo = new EnvInfoHandler(Constants.ENV_INFO_PATH).getEnvInfo();
     }
 
     public static PageNavigator getInstance() {
