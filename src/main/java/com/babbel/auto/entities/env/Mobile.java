@@ -6,7 +6,24 @@ public class Mobile {
     String url;
     User user;
     List<Capabilities> capabilities;
+    int timeOut;
+    int waitTimeOut;
 
+    public int getTimeOut() {
+        return timeOut;
+    }
+
+    public void setTimeOut(int timeOut) {
+        this.timeOut = timeOut;
+    }
+
+    public int getWaitTimeOut() {
+        return waitTimeOut;
+    }
+
+    public void setWaitTimeOut(int waitTimeOut) {
+        this.waitTimeOut = waitTimeOut;
+    }
 
     public String getUrl() {
         return url;
@@ -39,7 +56,7 @@ public class Mobile {
 
     public Capabilities getCapabilities(String os) {
         for (Capabilities capability : this.capabilities) {
-            if (capability.getDeviceName().toLowerCase().equals(os)) {
+            if (capability.getPlatformName().toLowerCase().equals(os)) {
                 return capability;
             }
         }

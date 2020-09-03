@@ -5,7 +5,7 @@ import com.babbel.auto.DriverManager;
 import com.babbel.auto.entities.env.Web;
 import com.babbel.auto.utils.Configuration;
 import com.babbel.auto.utils.Constants;
-import com.babbel.auto.web.driver.WebDriverFactory;
+import com.babbel.auto.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,7 +25,7 @@ public class WebDriverManager extends AbstractDriverManager implements DriverMan
         final int timeOut = web.getTimeout();
         final int maxTimeOut = web.getWaitTimeOut();
         final String browser = Configuration.getPropertyValue(Constants.BROWSER);
-        webDriver = Objects.requireNonNull(WebDriverFactory.getDriver(browser)).initDriver();
+        webDriver = Objects.requireNonNull(DriverFactory.getDriver(browser)).initDriver();
         webDriver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
         webDriver.manage().window().maximize();
         webDriverWait = new WebDriverWait(webDriver, maxTimeOut);

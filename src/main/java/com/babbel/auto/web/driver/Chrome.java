@@ -1,12 +1,13 @@
 package com.babbel.auto.web.driver;
 
+import com.babbel.auto.Driver;
 import com.babbel.auto.utils.EnvironmentChecker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static com.babbel.auto.utils.Constants.WINDOWS_OS;
 import static com.babbel.auto.utils.Constants.LINUX_OS;
 
-public class Chrome implements WDriver {
+public class Chrome implements Driver, EnvDriver {
 
     private static final String WEB_DRIVER_PATH_WINDOWS = "drivers/chromedriver.exe";
     private static final String WEB_DRIVER_PATH_LINUX = "drivers/chromedriver";

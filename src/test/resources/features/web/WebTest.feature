@@ -4,7 +4,7 @@ Feature: User Interface Automation Testing example
     Before: Once the framework is initialized the webDriver open and maximize the browser.
     After: Close the driver.
   \\Features:
-    Preconditions: All scenarios start on Babbel Orange Home Magazine.
+    Preconditions: All scenarios start on Babbel Orange HomePage.
   Tags:
     \\@HomePage: Redirect the web driver to Babbel Orange HomePage.
     \\@ui: test suit

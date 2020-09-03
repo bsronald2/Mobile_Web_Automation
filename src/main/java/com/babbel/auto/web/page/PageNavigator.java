@@ -23,9 +23,9 @@ public class PageNavigator extends WebBasePage {
     }
 
     /**
-     * Navigate to Magazine Home Page.
+     * Navigate to Home Page.
      *
-     * @return new MagazineHomePage instance
+     * @return new HomePage instance
      */
     public HomePage goHomePage() {
         webDriver.get(this.envInfo.getWeb().getUrl());

@@ -37,4 +37,8 @@ public class Configuration {
     public static String getPropertyValue(String name) {
         return properties.getProperty(name);
     }
+
+    public static void main(String[] args) {
+        System.out.println(Configuration.getPropertyValue(Constants.DRIVER));
+    }
 }

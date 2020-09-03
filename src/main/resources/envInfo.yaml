@@ -1,5 +1,7 @@
 id: "babbel-demo"
 mobile:
+  timeOut: 15
+  waitTimeOut: 30
   url: "http://localhost:4723/wd/hub"
   user:
     userName: "userName"
