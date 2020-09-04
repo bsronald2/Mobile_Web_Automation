@@ -3,30 +3,30 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-01T19:07:23.741Z",
+        "start_timestamp": "2020-09-04T17:45:08.658Z",
         "before": [
           {
             "result": {
-              "duration": 1049000,
+              "duration": 1923081200,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setup()"
+              "location": "MobileHooks.setup()"
             }
           }
         ],
-        "line": 4,
-        "name": "A",
+        "line": 13,
+        "name": "LogIn Successfully to APP",
         "description": "",
-        "id": "testing;a",
+        "id": "mobile-automation-testing-example;login-successfully-to-app",
         "after": [
           {
             "result": {
-              "duration": 40000,
+              "duration": 26200,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "MobileHooks.tearDown()"
             }
           }
         ],
@@ -35,32 +35,44 @@
         "steps": [
           {
             "result": {
-              "duration": 220800,
+              "duration": 21960489700,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I init framework",
+            "line": 14,
+            "name": "I login successfully to App under test",
             "match": {
-              "location": "WebStepDefs.iInitFramework()"
+              "location": "MobileStepdefs.iLoginSuccessfullyToAppUnderTest()"
             },
-            "keyword": "Given "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19258200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The HomePage should be displayed",
+            "match": {
+              "location": "MobileStepdefs.theHomePageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@ui"
+            "name": "@mobile"
           }
         ]
       }
     ],
-    "name": "Testing",
-    "description": "",
-    "id": "testing",
+    "name": "Mobile Automation Testing example",
+    "description": "  \\\\ Framework:\n  Before: Once the framework is initialized the webDriver open and maximize the browser.\n  After: Close the driver.\n  \\\\Features:\n  Preconditions: All scenarios start on Babbel Orange Home.\n  Tags:\n  \\\\@HomePage: Redirect the web driver to Babbel Orange HomePage.\n  \\\\@ui: test suit",
+    "id": "mobile-automation-testing-example",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/web/test.feature",
+    "uri": "file:src/test/resources/features/mobile/MobileTest.feature",
     "tags": [
       {
-        "name": "@ui",
+        "name": "@mobile",
         "type": "Tag",
         "location": {
           "line": 1,
