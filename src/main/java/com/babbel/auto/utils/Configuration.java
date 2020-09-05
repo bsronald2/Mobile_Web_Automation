@@ -3,9 +3,7 @@ package com.babbel.auto.utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -36,9 +34,5 @@ public class Configuration {
      */
     public static String getPropertyValue(String name) {
         return properties.getProperty(name);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(Configuration.getPropertyValue(Constants.DRIVER));
     }
 }

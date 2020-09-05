@@ -17,12 +17,19 @@ public class MobileDriverManager extends AbstractDriverManager implements Driver
     private WebDriver webDriver;
     private WebDriverWait webDriverWait;
 
+    /**
+     * Initiate mobile web driver.
+     */
     private MobileDriverManager() {
         String driver = Configuration.getPropertyValue(Constants.DRIVER);
         webDriver = Objects.requireNonNull(DriverFactory.getDriver(driver)).initDriver();
         webDriverWait = new WebDriverWait(webDriver, this.envInfo.getMobile().getWaitTimeOut());
     }
 
+    /**
+     * Creates a singleton MobileDriverManager instance.
+     * @return instance
+     */
     public static MobileDriverManager getInstance() {
         if (instance == null) {
             instance = new MobileDriverManager();
@@ -32,12 +39,21 @@ public class MobileDriverManager extends AbstractDriverManager implements Driver
         return instance;
     }
 
+    /**
+     * This method return Mobile driver.
+     *
+     * @return webDriver
+     */
     @Override
     public WebDriver getDriver() {
-
         return webDriver;
     }
 
+    /**
+     * This method return webDriverWait.
+     *
+     * @return webDriverWait
+     */
     @Override
     public WebDriverWait getWaitDriver() {
         return webDriverWait;

@@ -20,6 +20,9 @@ public abstract class MobileCapabilities extends AbstractDriverManager  {
         setCapabilities();
     }
 
+    /**
+     * Set up Desired Capabilities.
+     */
     private void setCapabilities() {
         this.mobile = this.envInfo.getMobile();
         this.driver = Configuration.getPropertyValue(Constants.DRIVER);

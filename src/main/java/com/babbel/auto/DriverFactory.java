@@ -9,11 +9,18 @@ import static com.babbel.auto.utils.Constants.IOS;
 
 public class DriverFactory {
 
-
+    /**
+     * Private Constructor.
+     */
     private DriverFactory() {
         // Default constructor
     }
 
+    /**
+     *
+     * @param driver
+     * @return
+     */
     public static Driver getDriver(String driver) {
         switch (driver) {
             case CHROME:

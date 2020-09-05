@@ -18,6 +18,9 @@ public class WebDriverManager extends AbstractDriverManager implements DriverMan
     private WebDriver webDriver;
     private WebDriverWait webDriverWait;
 
+    /**
+     * This method is in charge to initialize the DriverManager.
+     */
     private WebDriverManager() {
         super();
         Web web = this.envInfo.getWeb();
@@ -40,10 +43,21 @@ public class WebDriverManager extends AbstractDriverManager implements DriverMan
         return instance;
     }
 
+    /**
+     * This method return a web-driver instance.
+     *
+     * @return webDriver as WebDriver
+     */
+    @Override
     public WebDriver getDriver() {
         return webDriver;
     }
 
+    /**
+     * This method return web driver wait.
+     *
+     * @return webDriverWait.
+     */
     @Override
     public WebDriverWait getWaitDriver() {
         return webDriverWait;

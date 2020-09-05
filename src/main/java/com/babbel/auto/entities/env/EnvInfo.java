@@ -1,5 +1,9 @@
 package com.babbel.auto.entities.env;
 
+/**
+ * This class is used to parse envInfo.yaml file to
+ * an Object.
+ */
 public class EnvInfo {
 
     String id;

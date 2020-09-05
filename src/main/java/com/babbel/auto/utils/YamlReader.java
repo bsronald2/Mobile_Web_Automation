@@ -1,6 +1,5 @@
 package com.babbel.auto.utils;
 
-import com.babbel.auto.entities.env.EnvInfo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.yaml.snakeyaml.Yaml;

@@ -24,12 +24,5 @@ public abstract class MobileBasePage {
         PageFactory.initElements(new AppiumFieldDecorator(webDriver, Duration.ofSeconds(DEFAULT_WAIT_TIME)), this);
     }
 
-    public Boolean isElementPresent(By by) {
-        try {
-            webDriver.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
+
 }

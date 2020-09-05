@@ -13,6 +13,10 @@ public class Chrome implements Driver, EnvDriver {
     private static final String WEB_DRIVER_PATH_LINUX = "drivers/chromedriver";
     private static final String WEB_DRIVER_KEY = "webdriver.chrome.driver";
 
+    /**
+     * This method init Chrome web driver
+     * @return
+     */
     @Override
     public WebDriver initDriver() {
         String driverPath = getDriverPath();
@@ -20,6 +24,11 @@ public class Chrome implements Driver, EnvDriver {
         return new ChromeDriver();
     }
 
+    /**
+     * Retrieve the driver path by OS.
+     *
+     * @return driver path.
+     */
     @Override
     public String getDriverPath() {
         final String os = EnvironmentChecker.getInstance().getOsName();

@@ -8,6 +8,9 @@ public abstract class AbstractDriverManager {
 
     protected EnvInfo envInfo;
 
+    /**
+     * Abstract Driver Manager.
+     */
     public AbstractDriverManager(){
         this.envInfo = new EnvInfoHandler(Constants.ENV_INFO_PATH).getEnvInfo();
         this.envInfo.loadInitParam();

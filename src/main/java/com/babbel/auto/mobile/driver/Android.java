@@ -11,11 +11,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Android extends MobileCapabilities implements Driver {
-//
-//    public Android() {
-//        super();
-//    }
 
+    /**
+     * Init Android driver.
+     * @return
+     */
     @Override
     public WebDriver initDriver() {
         try {
