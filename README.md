@@ -9,9 +9,12 @@ On the other hand, in order to test the native Android app. The APK file was add
 
 To develop the framework Java programming language was used. Programs that are written in Java shows to be faster than other programming languages like Python. Moreover, Java is widely used in commercial applications rather than others.
 
-The web page automated was: https://www.babbel.com/
+The web page automated was: https://www.babbel.com/ 
+- One `Scenario Outline` was developed for Android web-browser.
+Path: `resources/features/web/WebTest.feature`
+- One `Scenario` was automated for the native Android app. Path: `src/test/resources/features/mobile/MobileTest.feature`
 
-*Note:*
+**Note:**
 This framework was developed and tested on **Windows 10** OS.
 
 ### **Installation**
@@ -78,7 +81,7 @@ $  gradle.bat cucumber -Pbrowser="chrome" -Pdriver="web" -Ptags="@ui"
 ```
 
 - 📱 To run mobile test cases
-  * Verify virtual device is running.
+  * Verify Android virtual device is running.
   * Verify appium server is running in `Port = 4723` and `Host = 0.0.0.0`
 ```sh
 $ gradle.bat cucumber -Pdriver="android" -Ptags="@mobile" -PuserName="percival@gmail.com" -Ppassword="123456"
