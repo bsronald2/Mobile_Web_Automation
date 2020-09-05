@@ -9,7 +9,7 @@ On the other hand, in order to test the native Android app. The APK file was add
 
 To develop the framework Java programming language was used. Programs that are written in Java shows to be faster than other programming languages like Python. Moreover, Java is widely used in commercial applications rather than others.
 
-In order to test native Android app
+The web page automated was: https://www.babbel.com/
 
 *Note:*
 This framework was developed and tested on **Windows 10** OS.
@@ -109,3 +109,4 @@ This file is parsed by Cucumber report plugin to generate a HTML report. To revi
 - **Page Object Model:** is used in this project to represent web pages as classes and web elements as variables. This implementation will allow automating any action like "ClickOnButton();" and  "FillOutText();"  as methods in classes. This allows creating readable code, reusable and easy to maintain.
 
 - **Base Page Object:** the `WebBasePage` and `MobileBasePage` retrieve the `WebDriver` and `WebDriverWait` objects from `DriverManager`. Furthermore, it is responsible to initialize the Web elements using the PageFactory. From onwards every page-object created should extend this class. 
+
