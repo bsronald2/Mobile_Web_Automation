@@ -15,7 +15,7 @@ Path: `resources/features/web/WebTest.feature`
 - One `Scenario` was automated for the native Android app. Path: `src/test/resources/features/mobile/MobileTest.feature`
 
 **Note:**
-This framework was developed and tested on **Windows 10** OS.
+This framework was developed and tested on **Windows 10** OS. Both test cases automated (Web & Mobile)  run successfully in Windows 10.  Even though, the framework support to run on Linux OS, the scenarios were **NOT** tested.
 
 ### **Installation**
 #### 📑 Set up environment
@@ -79,6 +79,9 @@ $ gradle.bat clean build
 ```sh
 $  gradle.bat cucumber -Pbrowser="chrome" -Pdriver="web" -Ptags="@ui"
 ```
+<p align="center">
+  <img width="720" src="https://user-images.githubusercontent.com/38532498/92314019-1c923e80-efca-11ea-9755-f26db798c194.gif">
+</p>
 
 - 📱 To run mobile test cases
   * Verify Android virtual device is running.
