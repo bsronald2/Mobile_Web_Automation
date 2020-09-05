@@ -15,7 +15,7 @@ public class Chrome implements Driver, EnvDriver {
 
     /**
      * This method init Chrome web driver
-     * @return
+     * @return Chrome Driver instance
      */
     @Override
     public WebDriver initDriver() {

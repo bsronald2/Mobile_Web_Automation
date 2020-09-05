@@ -1,6 +1,5 @@
 package com.babbel.auto.web;
 
-import com.babbel.auto.web.page.FactoryPage;
 import com.babbel.auto.web.page.HomePage;
 import com.babbel.auto.web.page.PageNavigator;
 import com.babbel.auto.web.page.QuestionPage;

@@ -1,9 +1,6 @@
 package com.babbel.auto.mobile;
 
-import com.babbel.auto.web.WebDriverManager;
-import com.babbel.auto.web.WebHooks;
-import com.babbel.auto.web.page.PageNavigator;
-import io.cucumber.java.After;
+
 import io.cucumber.java.Before;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,18 +17,11 @@ public class MobileHooks {
             envFlag = true;
             // Init Appium Driver
 //            MobileDriverManager.getInstance();
-//            PageNavigator.getInstance().acceptCookies();
-//            cleanEnvironment();
         }
     }
 
-    @After
-    public void tearDown() {
-
-    }
-
     /**
-     * Close web browser after all test executions.
+     * Close driver after all test executions.
      */
     public void cleanEnvironment() {
         // After execution
@@ -47,6 +37,4 @@ public class MobileHooks {
             }
         });
     }
-
-
 }

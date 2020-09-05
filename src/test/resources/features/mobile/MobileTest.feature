@@ -1,13 +1,9 @@
 @mobile
 Feature: Mobile Automation Testing example
   \\ Framework:
-  Before: Once the framework is initialized the webDriver open and maximize the browser.
   After: Close the driver.
-  \\Features:
-  Preconditions: All scenarios start on Babbel Orange Home.
   Tags:
-  \\@HomePage: Redirect the web driver to Babbel Orange HomePage.
-  \\@ui: test suit
+  \\@mobile: All mobile test cases should be tagged
 
 
   Scenario: LogIn Successfully to APP
